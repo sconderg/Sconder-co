@@ -1,0 +1,11 @@
+{
+  "name": "sconder-co",
+  "version": "1.0.0",
+  "description": "My company (Sconder) digital agency for web developement and marketing website.",
+  "main": "gulpFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sconder",
+  "license": "ISC"
+}
