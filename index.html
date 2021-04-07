@@ -11,6 +11,9 @@
         <!-- font-awesome css file -->
         <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
 
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
         <!-- custome css file -->
         <link rel="stylesheet" href="./css/style.css">
         <!-- endbuild -->
@@ -21,25 +24,276 @@
 
         <!-- header -->
         <header id="main-header">
-   
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="Comet" class="img-fluid px-3">Sconder</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#main-header">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="https://fb.com/sconderdev" class="btn btn-rounded">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 id="typewriter">We are Digital Agency.</h1>
+                        <p>With us, you will double your profits or even<br> start your brand new business today!</p>
+                        <button role="button" class="mt-4 btn btn-primary">Get Started</button>
+                    </div>
+                    <div class="col-lg-6 right">
+                        <img src="./img/coding.jpg" alt="coding image" class="img-fluid wow bounce" data-wow-offset="10" data-wow-duration="2s">
+                        <div class="some-info wow jello" data-wow-offset="10" data-wow-duration="2s">
+                            <p>We convert audiences into long-term customers</p>
+                            <span>~Sconder Founder.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .Header Container -->
         </header>
         <!-- .header -->
 
         <!-- main site -->
         <main id="main-site">
-    
+            <!-- Brands -->
+            <div class="brands">
+                <div class="container">
+                    <div class="b">
+                        <img src="./img/brands/1.svg" alt="Brand">
+                        <img src="./img/brands/2.svg" alt="Brand">
+                        <img src="./img/brands/3.svg" alt="Brand">
+                        <img src="./img/brands/4.svg" alt="Brand">
+                        <img src="./img/brands/5.svg" alt="Brand">
+                        <img src="./img/brands/6.svg" alt="Brand">
+                    </div>
+                </div>
+            </div>
+            <!-- .Brands -->
+
+            <!-- Services -->
+            <section class="services" class="services">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-md-9">
+                            <h2 class="h1">Our Awesome Services</h2>
+                            <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3 wow slideInLeft" data-wow-offset="10"  data-wow-duration="2s">
+                            <div class="box">
+                                <img src="./img/services/1.svg" alt="Service Image">
+                                <h3>Graphic Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3  wow slideInUp" data-wow-offset="10"  data-wow-duration="2s">
+                            <div class="box">
+                                <img src="./img/services/2.svg" alt="Service Image">
+                                <h3>Web Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3  wow slideInRight" data-wow-offset="10" data-wow-duration="2s">
+                            <div class="box">
+                                <img src="./img/services/3.svg" alt="Service Image">
+                                <h3>Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- .Services -->
+
+            <!-- About-company -->
+            <section class="about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>A few words about company</p>
+                            <h2 class="h1 mb-5">A Study of Creativity</h2>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            <button class="btn btn-primary mb-2">Get Started</button>
+                            <button class="btn btn-rounded">Contact Us</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="images">
+                                <img src="./img/about/1.jpg"  class="wow zoomInDown" data-wow-offset="10" data-wow-duration="2s">
+                                <img src="./img/about/2.jpg"  class="wow zoomInLeft" data-wow-offset="10" data-wow-duration="2s">
+                                <img src="./img/about/3.jpg"  class="wow zoomInLeft" data-wow-offset="10" data-wow-duration="2s">
+                                <img src="./img/about/4.jpg" class="wow zoomInUp" data-wow-offset="10" data-wow-duration="2s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- .About-company -->
+
+            <!-- Our Projects -->
+            <section id="projects" class="projects">
+                <div class="container">
+                   <div class="row mb-5">
+                       <div class="col-lg-8">
+                        <h2 class="h1">Our Awesome Projects</h2>
+                        <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                       </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-lg-4 mb-4 wow flipInX" data-wow-offset="10" data-wow-duration="2s">
+                        <div class="project">
+                            <img class="img-fluid" src="./img/projects/p1.jpg" alt="project">
+                            <h3 class="my-3">Awesome Project</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                            <a href="#" class="btn btn-rounded">Take a look</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 wow flip" data-wow-offset="10" data-wow-duration="2s">
+                        <div class="project">
+                            <img class="img-fluid" src="./img/projects/p2.jpg" alt="project">
+                            <h3 class="my-3">Awesome Project</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                            <a href="#" class="btn btn-rounded">Take a look</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 wow flipInY" data-wow-offset="10" data-wow-duration="2s">
+                        <div class="project">
+                            <img class="img-fluid" src="./img/projects/p3.jpg" alt="project">
+                            <h3 class="my-3">Awesome Project</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                            <a href="#" class="btn btn-rounded">Take a look</a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </section>
+            <!-- .Our Projects -->
+
+            <!-- Testimonials -->
+            <section class="testi">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-6">
+                            <h2 class="h1">What They Say?</h2>
+                            <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 mb-5">
+                            <div class="box">
+                                <p>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</p>
+                                <span>Ralph Waldo Emerson</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="box">
+                                <p>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</p>
+                                <span>Ralph Waldo Emerson</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="box">
+                                <p>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</p>
+                                <span>Ralph Waldo Emerson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- .Testimonials -->
+
+            <!-- Get In Touch -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-6">
+                            <h2 class="h1">Lets get in touch</h2>
+                            <p class="section-para"></p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" name="fullname" placeholder="Product Offer" class="form-control" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" placeholder="lopremipusm@mail.com" class="form-control" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" name="subject" placeholder="Subject" class="form-control" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Your Message Here..."></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 socials">
+                            <img src="./img/contact/3.jpg" class="img-fluid" alt="">
+                            <img src="./img/contact/2.jpg" class="img-fluid" alt="">
+                            <img src="./img/contact/1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- .Get In Touch -->
         </main>
         <!-- .main site -->
 
         <!-- footer -->
         <footer id="footer">
-
+            <div class="container">
+                <div class="foot">
+                    <div class="logo">
+                        <img src="/img/logo.svg" class="img-fluid" alt="Logo">
+                        Sconder
+                    </div>
+                    <div>
+                        <p>© 2021 - <span>Sconder</span> All Rights Reserved</p>
+                    </div>
+                    <div class="BackToTop">
+                        Back to top
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- .footer -->
 
         <!-- build:js js/lib.js -->
         <script src="./node_modules/jquery/jquery.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./node_modules//typewriter-effect/dist/core.js"></script>
+        <script src="./node_modules/wowjs/dist/wow.min.js"></script>
         <script src="./js/plugins.js"></script>
         <!-- endbuild -->
     </body>

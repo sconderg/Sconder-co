@@ -7,9 +7,8 @@ var gulp = require('gulp'),
     usemin = require('gulp-usemin'),
     htmlmin = require('gulp-htmlmin'),
     rev = require('gulp-rev'),
-    cleanCss = require('gulp-clean-css'),
+    cleanCss = require('gulp-clean-css');
     
-
 gulp.task('sass', function() {
     return gulp.src('./css/*.scss')
     .pipe(sass().on('error',sass.logError))
