@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap");
-/*
-
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Slab', serif;
-
-*/
-
 /* root styles */
 :root {
   --green-color: #4cd5c5;
@@ -19,8 +11,14 @@ font-family: 'Roboto Slab', serif;
 }
 
 /* global styles */
+html {
+  scroll-behavior: smooth;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  position: relative;
 }
 
 .btn-primary {
@@ -55,15 +53,20 @@ body {
     background-color: var(--dark-purp-color) !important;
     border-color: var(--dark-purp-color) !important;
     box-shadow: none !important;
+    color: #fff !important;
   }
 }
 
 section {
   padding: 5em 0;
+  background: url(../img/bg.svg);
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
   .h1 {
     font-size: 40pt;
-    font-family: "Roboto Slab", serif;
-    font-weight: lighter;
+    font-family: "Cairo", sans-serif;
+    font-weight: 100;
     color: var(--dark-purp-color);
   }
   .section-para {
@@ -82,6 +85,17 @@ section {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  :focus,
+  :active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 /* selection styles */
 
 /* Header */
@@ -91,9 +105,11 @@ header {
   /* Navbar */
   .navbar {
     z-index: 2;
+    transition: all ease-in-out 1s;
+    filter: saturate(100%);
     .navbar-brand {
-      font-family: "Roboto Slab", serif;
-      font-weight: 100;
+      font-family: "Cairo", sans-serif;
+      font-weight: 00;
       font-size: 20px;
       color: var(--dark-purp-color);
     }
@@ -105,9 +121,9 @@ header {
         &:hover {
           color: var(--purp-color);
         }
-      }
-      &.active .nav-link {
-        color: var(--purp-color);
+        &.active {
+          color: var(--purp-color);
+        }
       }
     }
   }
@@ -119,7 +135,7 @@ header {
     .col-lg-6 {
       z-index: 1;
       h1 {
-        font-family: "Roboto Slab", serif;
+        font-family: "Cairo", sans-serif;
         font-size: 66px;
         color: var(--dark-purp-color);
       }
@@ -131,10 +147,10 @@ header {
       }
     }
     .right {
-      background: url(../img/header.svg);
-      background-repeat: no-repeat;
-      background-position: right;
+      background: url(../img/bg.svg);
       background-attachment: fixed;
+      background-position: right;
+      background-repeat: no-repeat;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -167,16 +183,13 @@ header {
           font-style: italic;
         }
         &::after {
-          content: "";
-          background: url(../img/some-info.svg);
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 12em;
-          height: 12em;
+          content: '"';
+          font-style: italic;
+          font-size: 174px;
+          color: var(--orange-color);
           position: absolute;
-          top: -40px;
-          left: -100px;
+          top: -100px;
+          left: -55px;
         }
       }
     }
@@ -221,10 +234,6 @@ header {
 
   /* About Company */
   .about-us {
-    background: url(../img/about-company.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     p {
       font-weight: bold;
       color: var(--dark-purp-color);
@@ -235,20 +244,19 @@ header {
       line-height: 25pt;
       padding-bottom: 3em;
     }
+    .btn {
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
     .images {
-      position: absolute;
-      top: -40%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      //   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
-      filter: sepia(100%);
-      transition: all ease-in-out 0.3s;
-      &:hover {
-        filter: sepia(0);
-      }
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
       img {
         padding: 1em;
         &:first-of-type {
@@ -267,8 +275,7 @@ header {
   .projects {
     .project {
       img {
-        max-height: 290px;
-        min-width: 100%;
+        max-height: 181px;
       }
       h3 {
         color: var(--dark-purp-color);
@@ -285,7 +292,6 @@ header {
 
   /* Testimonials */
   .testi {
-    background-color: var(--white-color);
     .box {
       background-color: var(--dark-purp-color);
       color: var(--orange-color);
@@ -304,17 +310,13 @@ header {
         font-style: italic;
       }
       &::after {
-        content: "";
-        background: url(../img/some-info.svg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 12em;
-        height: 12em;
+        content: '"';
+        font-style: italic;
+        font-size: 174px;
+        color: var(--orange-color);
         position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: -100px;
+        left: 120px;
       }
     }
   }
@@ -322,7 +324,6 @@ header {
 
   /* Get In Touch */
   .contact {
-    background-color: var(--white-color);
     form {
       .form-group {
         margin: 2em 0;
@@ -391,8 +392,9 @@ header {
         margin-right: 0.8em;
       }
     }
-    span {
+    a {
       color: var(--purp-color);
+      text-decoration: none;
     }
     .BackToTop {
       cursor: pointer;
@@ -400,7 +402,7 @@ header {
   }
 }
 /* .Footer */
-@media (max-width: 967px) {
+@media (max-width: 991px) {
   header {
     .navbar {
       position: fixed;
@@ -408,7 +410,7 @@ header {
       z-index: 999;
       background-color: #fff;
       .nav-item {
-        padding: 3em 0 1em;
+        padding: 1em 0;
         .nav-link {
           color: #fff;
           font-size: 25px;
@@ -420,25 +422,21 @@ header {
       .navbar-collapse {
         background-color: var(--dark-purp-color);
         position: fixed;
-        height: calc(100% - 66px);
+        height: calc(100vh - 66px);
         width: 100%;
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
-        bottom: 0;
+        top: 66px;
         text-align: center;
         left: 0;
         transition: all ease-out 0.3s;
         .mr-auto {
           margin: auto;
           .btn-rounded {
-            font-size: 18px;
+            font-size: 16px;
             background-color: #fff;
           }
-        }
-        .d-none {
-          display: inline-block !important;
-          color: #fff;
         }
         &.openMe {
           display: flex;
@@ -452,6 +450,17 @@ header {
         .img-fluid {
           width: 100%;
         }
+      }
+    }
+  }
+  .services {
+    text-align: center;
+  }
+  .projects {
+    .project {
+      text-align: center;
+      img {
+        min-width: 50% !important;
       }
     }
   }
@@ -481,10 +490,12 @@ header {
       display: none;
     }
   }
+}
+
+@media (max-width: 335px) {
   .about-us {
-    .images {
-      position: relative !important;
-      top: 0 !important;
+    .btn-primary {
+      margin-bottom: 1em;
     }
   }
 }

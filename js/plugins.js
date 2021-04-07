@@ -6,9 +6,6 @@ var transparentNavbar = function () {
    $('nav').removeClass('solid');
 }
 $(window).on('load', function () { 
-   if ($(window).width() <= 974) {
-       solidNavbar();
-   }
    if($(window).width() > 974) {
        if($(window).scrollTop() > 90) {
            solidNavbar();
@@ -33,13 +30,17 @@ $(function() {
     $('.navbar-collapse').toggleClass('openMe');
     $(this).toggleClass('fa-times');
     $(this).toggleClass('fa');
-
    });
+   if ($(window).width() <= 991) {
+        $('.nav-link').on('click', function() {
+            $('.navbar-collapse').toggleClass('openMe');
+        })
+    }
 
    $('.BackToTop').on('click',function (){
       $('html,body').animate({scrollTop:0},1000);
    });
-   new WOW().init(); 
+   new WOW().init();
 });
 
 /* TyperWriter Effect */
@@ -59,5 +60,3 @@ typewriter.typeString('We are Digital Agency.')
     .typeString('esign')
     .pauseFor(2500)
     .start();
-
-/* WowJS Animations */

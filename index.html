@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <!-- build:css css/style.css -->
         <!-- bootstrap css file -->
         <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -20,11 +23,11 @@
 
         <title>Sconder - Web development Digital Agency</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbarSpy" data-offset="0">
 
         <!-- header -->
         <header id="main-header">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbarSpy">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="Comet" class="img-fluid px-3">Sconder</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,8 +36,8 @@
 
                     <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#main-header">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#main-header">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">Services</a>
@@ -60,7 +63,7 @@
                     <div class="col-lg-6">
                         <h1 id="typewriter">We are Digital Agency.</h1>
                         <p>With us, you will double your profits or even<br> start your brand new business today!</p>
-                        <button role="button" class="mt-4 btn btn-primary">Get Started</button>
+                        <a href="https://fb.com/sconderdev" role="button" class="mt-4 btn btn-primary">Get Started</a>
                     </div>
                     <div class="col-lg-6 right">
                         <img src="./img/coding.jpg" alt="coding image" class="img-fluid wow bounce" data-wow-offset="10" data-wow-duration="2s">
@@ -78,7 +81,7 @@
         <!-- main site -->
         <main id="main-site">
             <!-- Brands -->
-            <div class="brands">
+            <!-- <div class="brands">
                 <div class="container">
                     <div class="b">
                         <img src="./img/brands/1.svg" alt="Brand">
@@ -89,38 +92,31 @@
                         <img src="./img/brands/6.svg" alt="Brand">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- .Brands -->
 
             <!-- Services -->
-            <section class="services" class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col-md-9">
                             <h2 class="h1">Our Awesome Services</h2>
-                            <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            <p class="section-para">Our imaginative and prescient is that each corporation have to have a excessive best internet site with affordable prices.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 mb-3 wow slideInLeft" data-wow-offset="10"  data-wow-duration="2s">
+                        <div class="col-md-6 mb-3 wow slideInDown" data-wow-offset="10"  data-wow-duration="2s">
                             <div class="box">
                                 <img src="./img/services/1.svg" alt="Service Image">
                                 <h3>Graphic Design</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>We allow you to broaden effective imagery and strategies that strike on the coronary heart of your audiences.There are 3 responses to a bit of design – yes, no, and WOW!</p>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-3  wow slideInUp" data-wow-offset="10"  data-wow-duration="2s">
+                        <div class="col-md-6 mb-3  wow slideInUp" data-wow-offset="10"  data-wow-duration="2s">
                             <div class="box">
                                 <img src="./img/services/2.svg" alt="Service Image">
-                                <h3>Web Design</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3  wow slideInRight" data-wow-offset="10" data-wow-duration="2s">
-                            <div class="box">
-                                <img src="./img/services/3.svg" alt="Service Image">
-                                <h3>Development</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                                <h3>Web Design & Development</h3>
+                                <p>Website is your window to the Internet and via it every body can attain you and customers can view the offerings you offer easily, so our organisation offers a web site design carrier to make your existence easier.</p>
                             </div>
                         </div>
                     </div>
@@ -132,12 +128,12 @@
             <section class="about-us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <p>A few words about company</p>
+                        <div class="col-lg-6 mb-5">
+                            <p>We are your partners in all things creative, and all things production.</p>
                             <h2 class="h1 mb-5">A Study of Creativity</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            <button class="btn btn-primary mb-2">Get Started</button>
-                            <button class="btn btn-rounded">Contact Us</button>
+                            <p>Creativity  is  arguably  our  most  uniquely  human  trait.  It  enables  us  to  escape  the  present, reconstruct the past, and fantasize approximately the future, to visualise some thing that doesn't exist and change  the  global with  it.  Defining creativity  presents  difficulties; for  example,  now no longer all  innovative works  are  useful,  and  now no longer  all  are  aesthetically  pleasing.</p>
+                            <button class="btn btn-primary"><a href="https://fb.com/sconderdev">Get Started</a></button>
+                            <button class="btn btn-rounded"><a href="#contact">Contact Us</a></button>
                         </div>
                         <div class="col-lg-6">
                             <div class="images">
@@ -157,33 +153,33 @@
                 <div class="container">
                    <div class="row mb-5">
                        <div class="col-lg-8">
-                        <h2 class="h1">Our Awesome Projects</h2>
-                        <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <h2 class="h1">Latest Projects</h2>
+                        <p class="section-para">Our imaginative and prescient is that each corporation have to have a excessive best internet site with affordable prices.</p>
                        </div>
                    </div>
                    <div class="row">
                     <div class="col-lg-4 mb-4 wow flipInX" data-wow-offset="10" data-wow-duration="2s">
                         <div class="project">
-                            <img class="img-fluid" src="./img/projects/p1.jpg" alt="project">
-                            <h3 class="my-3">Awesome Project</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
-                            <a href="#" class="btn btn-rounded">Take a look</a>
+                            <img class="img-fluid" src="./img/projects/p1.png" alt="project">
+                            <h3 class="my-3">Comet Agency</h3>
+                            <p>Responsive Landing Page built with bootstrap and js libraries.</p>
+                            <a href="./project/comet-agency" class="btn btn-rounded">Take a look</a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 wow flip" data-wow-offset="10" data-wow-duration="2s">
                         <div class="project">
-                            <img class="img-fluid" src="./img/projects/p2.jpg" alt="project">
-                            <h3 class="my-3">Awesome Project</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
-                            <a href="#" class="btn btn-rounded">Take a look</a>
+                            <img class="img-fluid" src="./img/projects/p2.png" alt="project">
+                            <h3 class="my-3">Amir Portfolio</h3>
+                            <p>Responsive Personal Website built with bootstrap and js libraries.</p>
+                            <a href="./project/amir-portfolio" class="btn btn-rounded">Take a look</a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 wow flipInY" data-wow-offset="10" data-wow-duration="2s">
                         <div class="project">
-                            <img class="img-fluid" src="./img/projects/p3.jpg" alt="project">
-                            <h3 class="my-3">Awesome Project</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
-                            <a href="#" class="btn btn-rounded">Take a look</a>
+                            <img class="img-fluid" src="./img/projects/p3.png" alt="project">
+                            <h3 class="my-3">Sconder Portfolio</h3>
+                            <p>Responsive Personal Website built with bootstrap and js libraries.</p>
+                            <a href="./project/sconder-portfolio" class="btn btn-rounded">Take a look</a>
                         </div>
                     </div>
                    </div>
@@ -197,7 +193,7 @@
                     <div class="row mb-5">
                         <div class="col-lg-6">
                             <h2 class="h1">What They Say?</h2>
-                            <p class="section-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna </p>
+                            <p class="section-para">Our imaginative and prescient is that each corporation have to have a excessive best internet site with affordable prices.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -230,12 +226,12 @@
                     <div class="row mb-5">
                         <div class="col-lg-6">
                             <h2 class="h1">Lets get in touch</h2>
-                            <p class="section-para"></p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                            <p class="section-para">Our imaginative and prescient is that each corporation have to have a excessive best internet site with affordable prices.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 mb-5">
-                            <form action="">
+                            <form medthod="POST" action="./mail.php">
                                 <div class="form-group">
                                     <label for="fullname">Full Name</label>
                                     <input type="text" name="fullname" placeholder="Product Offer" class="form-control" autocomplete="off">
@@ -259,9 +255,9 @@
                             </form>
                         </div>
                         <div class="col-lg-6 socials">
-                            <img src="./img/contact/3.jpg" class="img-fluid" alt="">
-                            <img src="./img/contact/2.jpg" class="img-fluid" alt="">
-                            <img src="./img/contact/1.jpg" class="img-fluid" alt="">
+                            <img src="./img/contact/3.jpg" class="img-fluid" alt="contact">
+                            <img src="./img/contact/2.jpg" class="img-fluid" alt="contact">
+                            <img src="./img/contact/1.jpg" class="img-fluid" alt="contact">
                         </div>
                     </div>
                 </div>
@@ -275,11 +271,11 @@
             <div class="container">
                 <div class="foot">
                     <div class="logo">
-                        <img src="/img/logo.svg" class="img-fluid" alt="Logo">
+                        <img src="./img/logo.svg" class="img-fluid" alt="Logo">
                         Sconder
                     </div>
                     <div>
-                        <p>© 2021 - <span>Sconder</span> All Rights Reserved</p>
+                        <p>© 2021 - <a href="https://fb.com/sconderdev">Sconder</a> All Rights Reserved</p>
                     </div>
                     <div class="BackToTop">
                         Back to top
